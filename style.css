@@ -1,0 +1,606 @@
+/*--------------main body----------*/
+body
+{
+    margin: 0;
+    padding: 0;
+   
+  font-family: sans-serif;
+  
+}
+html {
+ scroll-behavior: smooth;
+}
+
+
+
+/*---------------navbar-------------*/
+#fix1
+{
+    position: sticky;
+    top:0px;
+    height: 60px;
+    background-color: /*#ddf3f5;*/#eeeeee;
+    padding-top: 20px;
+    padding-left: 80px;
+    z-index: 1;
+}
+@media screen and (max-width:800px){
+    #fix1{
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+}
+.navbar{
+/*    background-color: #ddf3f5;*/
+
+    background-size: cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding:40px 10px 80px 40px;
+    height: auto;
+   
+}
+@media screen and (max-width:800px){
+    .navbar{
+        width: 100%;
+        height: auto;
+    }
+}
+.font12
+{
+    letter-spacing: 1.4px;
+     transition: .5s ease;
+    font-size: 18px;
+}
+.font12:hover{
+    font-size: 20px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.font12:active
+{
+    text-decoration: underline;
+}
+
+
+/*-----------------home-----------------*/
+#nv
+{
+background-color:  #eeeeee;
+}
+.a1{
+    font-size: 21px;
+    margin-right:30rem ;
+    color: black;
+    font-weight: bold;
+}
+@media screen and (max-width:800px){
+    .a1{
+        
+        margin: auto;
+        font-size: 20px;
+    }
+    a{
+        font-size: 10px;
+    }
+}
+a{
+    margin: 15px;
+    text-decoration: none;
+    font-size: 25px;
+     color:black;
+}
+.title{
+    padding: 60px;
+    font-family: 'Montserrat Alternates', sans-serif;
+   font-size: 25px;
+
+}
+@media screen and (max-width:800px){
+    .title{
+        margin: auto;
+        text-align: center;
+    }
+}
+.signup{
+    font-size: 20px;
+    height: 50px;
+    width: 200px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.signup:hover
+{
+	background:grey;
+    box-shadow:0 0 20px #ddd,0 0 20px #fff,0 0 16px black;
+}
+
+
+#logo_left
+{
+    float: left;
+}
+#logo_right
+{
+    float: right;
+    margin-bottom: 300px;
+}
+#to_right_image
+{
+    height: 430px;
+    width: 730px;
+   
+    position: absolute;
+    top: 200px;
+    right: 10px;
+  
+}
+/*---------------rules---------*/
+#rules1
+{
+    padding: 100px;
+    width: 50%;
+    color: black;
+    margin: auto;
+    font-size:30px;
+    height: 400px;
+}
+@media screen and (max-width:800px){
+    #rules1{
+        width: 100%;
+        font-size: 20px;
+        height: auto;
+        padding: 10%;
+        text-align: center;
+       
+    }
+    #inst{
+        text-align: center;
+        
+    }
+}
+#inst{
+text-align: center;
+    color:;
+}
+
+#calc
+{
+    height: 500px;
+    width: 500px;
+    position: relative;
+    right:280px;
+    bottom: 50px;
+}
+#calc_right
+{
+    position: relative;
+    left:240px;
+    bottom: 480px;
+}
+
+/*---------------------game-------------*/
+#out{
+    background-color: #eeeeee;
+}
+#first
+{
+    
+	margin:auto;
+	font-size:20px;
+	background-color: gray;
+	padding: 14px 28px;
+	border-radius: 20px;
+	border:none;
+	box-shadow: 0 9px #ddd;
+	display:block;
+	cursor: pointer;
+    transition: .4s;
+}
+#first:hover
+{
+	background:black;
+    box-shadow:0 0 20px #ddd,0 0 20px #fff,0 0 16px black;
+}
+.strtbtn{
+    border-radius: 50%;
+}
+#defeat{
+       font-family: 'Montserrat Alternates', sans-serif;
+}
+.f12
+{
+    color: #797a7e;
+    text-align: center;
+font-family: 'Poppins', sans-serif;
+    padding-bottom: 20px;
+    
+
+}
+
+.navitem
+{
+	margin:20px;
+	font-size:20px;
+	background-color:gray;
+    opacity: 0.9;
+	padding: 14px 28px;
+	border-radius: 12px;
+	border:none;
+	box-shadow: 0 9px #ddd;
+	display: inline-block;
+	cursor: pointer;
+	float:left;
+	width:300px;
+	font-weight:bold;
+    color:white;
+    transition: .4s;
+	}
+
+.navitem:hover
+{
+	background:black;
+    box-shadow:0 0 20px #ddd,0 0 20px #fff,0 0 16px black;
+}
+
+#msg_turn
+{
+
+	text-align:center;
+	font-size:30px;
+	color:black;
+}
+#msg_t
+{
+	font-size:50px;
+}
+
+#myDiv
+{
+	position:inherit;
+	margin:auto;
+	padding-left:13%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+	display:none;
+}
+#sum1
+{
+	color:black;
+	padding-top:25px;
+	padding-left:30%;
+	font-size:40px;
+	
+}
+#head1
+{
+	margin-left:35%;
+	margin-right:auto;
+	position:center;
+	width:300px;
+	height:150px;
+}
+#out
+{
+    padding: 70px;
+	background-color:;
+    width:inherit;
+}
+#try_again
+{
+    margin-left: 38%;
+    padding-bottom: 50px;
+    display: none;
+    
+}
+#sound
+{
+    float: right;
+}
+#sound
+{
+    display: none;
+}
+/*-------------------Meet the developers layout----------*/
+#deve
+{
+    text-align: center;
+    font-size: 30px;
+    padding: 40px;
+ font-family: 'Montserrat Alternates', sans-serif; 
+}
+#meetdiv{
+padding: 10px 0 80px 0;
+}
+#demo{
+    color: black;
+    background-color: white;
+    padding: 5%;
+    width: 50%;
+    height: 220px;
+    margin: auto;
+    box-shadow:0 0 20px #ddd,0 0 20px #fff,0 0 16px black;
+    padding-bottom: 30px;
+}
+
+#feed_head{
+font-weight: bolder;
+}
+#demo2{
+    color: black;
+    background-color: white;
+    padding: 5%;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    box-shadow:0 0 20px #ddd,0 0 20px #fff,0 0 16px black;
+}
+@media screen and (max-width:800px){
+    #demo{
+        width: 40%;
+        height: auto;
+        padding: 5%;
+    }
+    #demo2{
+         width: 40%;
+        height: auto;
+        padding: 5%;
+        
+    }
+}
+#F1{
+text-align: center;
+}
+.lastimg{
+    float: left;
+    height: 9rem;
+    padding: 3%;
+    
+    width: 9rem;
+    border-radius: 50%;
+}
+@media screen and (max-width:800px){
+    .lastimg{
+        clear:left;
+        margin: auto;
+    }
+    
+}
+.lastimg1{ 
+
+    float: right;
+    padding: 3%;
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+}
+@media screen and (max-width:800px){
+    .lastimg1{
+        clear:right;
+        margin: auto;
+    }
+}
+
+/*------------copyright---------------*/
+#copyright{
+    text-align: center;
+    background-color:#fff;
+    word-spacing: .3em;
+    padding: 10px;
+    width:inherit;   
+}
+#contact
+{
+	padding: 20px;
+	color:#ff2e63;
+}
+
+i{
+    font-size: 30px;
+    
+}
+/*-----Meet the developers content----*/
+.name{
+    font-size: 30px;
+    font-weight: bolder;
+    
+}
+
+p{
+    justify-content: flex-end;
+    font-family: 'Poppins', sans-serif;
+}
+/*--------------feedback--------------*/
+#feed
+{
+    background-color: #eeeeee;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    
+}
+@media screen and (max-width:800px){
+    #feed{
+    padding-left: 0;
+        padding: 10%;
+    }
+}
+#hear{
+color: #797a7e;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+}
+@media screen and (max-width:800px){
+    #feed_head,#hear{
+        text-align: center;
+    }
+    
+}
+#feed_hr
+{
+    width:30%;
+    margin-right: 1000px;
+    opacity:0.5;
+}
+@media screen and (max-width:800px){
+    #feed_hr{
+        width: 100%;
+        margin-right: 0;
+        }
+}
+#feed_in
+{
+    
+    padding-top: 70px;
+    padding-left: 200px;
+    font-size: 18px;
+    color:black;
+}
+
+@media screen and (max-width:800px){
+    #feed_in{
+        padding-left: 0;
+        width: 100%;
+    }
+}
+
+.finput
+{
+    width: 30%;
+    background-color: transparent;
+    border: none;
+    padding: .375rem .75rem;
+    border-bottom: 2.5px solid black;
+    color:black;
+}
+ 
+.finput:focus{
+     background-color: gainsboro;
+ border-bottom: 2.5px solid blue;
+     color: black;
+    border-bottom-color: blue;
+    outline: none;
+}
+.finput2
+{
+    width: 30%;
+    background-color: transparent;
+
+    border: none;
+    padding: .375rem .75rem;
+    border-bottom: 2.5px solid black;
+    color:black;
+    margin-left: 100px;
+}
+
+.finput2:focus{
+     background-color: gainsboro;
+    border-bottom: 2.5px solid blue;
+ border-bottom-color: blue;
+    outline: none;
+}
+@media screen and (max-width:800px){
+    .finput{
+        width: 100%;
+       margin: auto;
+        margin-bottom: 10%;
+       
+    }
+    .finput2{
+        width: 100%;
+       margin: auto;
+        margin-bottom: 10%;
+       margin-left: 0;
+    }
+}
+::placeholder
+{
+   color: #797a7e;
+    font-weight: 100;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#feed_tarea
+{
+    margin-top: 60px;
+    background-color: transparent;
+    width: 73%;
+    border: none;
+    padding: .375rem .75rem;
+    border-bottom: 2.5px solid black;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#feed_tarea:focus{
+      background-color: gainsboro;
+    border-bottom: 2.5px solid blue;
+    outline: none;
+ border-bottom-color: blue;
+    
+}
+@media screen and (max-width:800px){
+    #feed_tarea{
+        width: 100%;
+        padding: 5%;
+        margin: auto;
+    }
+}
+#reading{
+position: relative;
+    height: 200px;
+    width: 200px;
+    right: 220px;
+    top: 70px;
+}
+#feed_btn
+{
+    font-family: 'Poppins', sans-serif;
+    background-color:gray;
+    opacity: 0.9;
+    color: #fff;
+	padding: 14px 28px;
+   /* box-shadow: 0 5px #ddd;*/
+    margin-top: 50px;
+    margin-left: 30%;
+    padding: 12px 35px;
+    
+    text-align: center;
+    cursor: pointer;
+    border:transparent;
+    transition: 1s;
+}
+
+#feed_btn:hover{
+   
+    /*box-shadow:0 0 20px #ddd,0 0 20px #fff;*/
+    color: white;
+    background-color: blue;
+    opacity: .8;
+
+
+}
+@media screen and (max-width:800px){
+    #feed_btn{
+      
+        align-items: center;
+        justify-content: center;
+    }
+}
+.icons{
+    transition: 1s;
+}
+.icons:hover{
+    color: blue;
+}
+#wrong
+{
+    margin-left: 330px;
+    margin-top: 10px;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Rumble</title>
+    <link rel="icon" type="image/png" href="play1.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="valid.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://kit.fontawesome.com/cd55b9d8f1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  
+    
+</head>
+
+    
+    
+<body>
+
+    <audio id="ID" loop>
+        <source src="music.mp3" type="audio/mp3">
+    </audio>
+    <audio id="ID1">
+        <source src="over.mp3" type="audio/mp3">
+    </audio>
+
+        <div id="fix1">       
+            <a href="index.html" class="a1"><i class='fas fa-brain' style='font-size:30px;color: black'> </i> NUMBER RUMBLE</a>
+         <a class="font12" href="#nv">HOME</a>
+        <a class="font12" href="#rules1">INSTRUCTIONS</a>
+        <a class="font12" href="#feed">CONTACT</a>
+        <a class="font12" href="#meetdiv">ABOUT</a>
+            </div>
+    <!-----------------------home----------------->
+<div id="nv" class="navbar">
+        <div class="title">
+            <h1>Are you crazy for victory?</h1>
+            
+
+            <h1>Obsessed with games?</h1>
+
+            <h2>Get in ! Let's have fun.</h2>
+           
+            <h3>Try your luck.</h3>
+
+             <a style="color: black;" href="#out"><button type="button" class="signup"> <i class="fa fa-sign-in"></i>&nbsp;&nbsp;Play Now</button></a>
+            <img id="to_right_image" src="play1.png"/>
+            </div>
+    </div>
+    <div id="rules1" class="rules">
+        <img id="calc" src="c.svg">
+        <div id="calc_right">
+        <h2 id="inst"><i class="far fa-edit"></i>Instructions:</h2>
+        <p>1. Alternatively We will select a number from 1,2 and 3.</p>
+        <p>2. You will win the game if on your turn of selection the sum becomes 52.</p>
+    </div>
+    </div>
+
+    <!---------game----------------------->
+
+
+    <div id="out">
+
+
+
+        <div id="F1">
+          <h1 id="defeat">Defeat Me If You Can.</h1>
+           <h1 class="f12"> Try Your Luck!</h1>
+            <button id="first" onclick="hide();"><img src="button.jpg" class="strbtn"></button>
+
+        </div>
+        <div id="msg_turn">
+            <span id="msg_t"></span>
+        </div>
+        <div id="myDiv">
+            <p>
+                <button class="navitem" id="one" onclick="addition1();">1</button>
+                <button class="navitem" id="two" onclick="addition2();">2</button>
+                <button class="navitem" id="three" onclick="addition3();">3</button>
+            </p>
+            
+        </div>
+        <div id="sum1">
+            <span id="sum2"></span>
+            <span id="sum3"></span>
+        </div>
+        <div id="try_again">
+          <button  class="navitem" onclick="history.go(0)">Try Again</button>
+        </div>
+        <div id="sound">
+         <button onclick="soundof();"><span id="icon1" class="fas fa-volume-up"></span></button>
+        </div>
+    </div>
+    <!--------meet the developers--------->
+    <div id="meetdiv">
+    <div id="deve">Meet The Developers</div>
+    <div id="demo">
+        <img src="dp1.jpg" class="lastimg">
+        <p class="name">Hi ! I'm Karan.</p>
+       <p >I'm persuing Btech in <b>Chitkara University</b>. I ❤️ Coding. I'm a <b>Passionate Learner.</b></p>
+    </div><br><br>
+<div id="demo2">
+        <img src="IMG_20190712_191845_072.jpg" class="lastimg1">
+    <p class="name">Hi ! I'm Avishka.</p>
+    <p>I'm persuing Btech in <b>Chitkara University</b>. I ❤️ making Websites. I'm really good at <b>Web Design.</b></p>
+    </div>
+    </div>
+<!-----------------------feedback--------------->
+        <div id="feed">
+        <h1 id="feed_head">Drop A Message.</h1>
+            <hr/ id="feed_hr">
+            <h3 id="hear">We'd love to hear from you!</h3>
+            <form method="post">
+            <div id="feed_in">
+            <input id="fname" class="finput" type="text" placeholder="Name" onblur="valid_name();" required>
+            <input id="mail" class="finput2" type="email" placeholder="Email Address" onblur="valid_email();" required><br>
+              
+            <textarea required id="feed_tarea" placeholder="Your message" ></textarea>
+              <img src="r.svg" id="reading"><br>
+               <span id="wrong"></span><br>
+                <button id="feed_btn" type="submit" onclick="sub();">Send Message</button>
+                </div>
+                </form>
+        </div>
+    <!-----------copyright------------>
+
+    <div id="copyright">
+        <div id="contact">
+            <a href="https://github.com/sandhukaran28"  target="_blank"><i class="icons fa fa-github"></i></a>
+            <a href="https://www.instagram.com/sandhukaran28/"  target="_blank"><i class="icons fa fa-instagram"></i></a>
+            <a href="mailto:sandhukaran2821@gmail.com"  target="_blank"><i class="icons fa fa-envelope"></i></a>
+            <a href="https://www.facebook.com/karan.sandhu.28052001/"  target="_blank"><i class="icons fa fa-facebook"></i></a>
+        </div>
+        <p>THANKS FOR VISITING!❤️</p>
+    </div>
+</body></html>
