@@ -1,0 +1,182 @@
+*{
+    --green-color:#0bceaf;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #100E17;
+    color: white;
+}
+/* Navbar */
+body{
+    background-color: #100E17 !important;   
+}
+nav{
+    background-color: #100E17; 
+    position: sticky !important;
+    top: 0px !important;
+    z-index: 1;
+}
+.nav-link{
+    color: white; 
+    font-size: 1.5rem;
+    transition-duration: 200ms !important;
+}
+.navbar-nav{
+    padding-left: 30% !important;
+}
+.nav-link[class="active"]{
+    color: #0bceaf !important;
+}
+.nav-link:hover{
+    color: #0bceaf !important;
+}
+.navbar-toggler-icon{
+    color: white !important;
+}
+/* Home */
+.row{
+    margin-top: 20vh !important;
+    padding-top: 5%;
+}
+#main{
+    padding: 0px 10%;
+}
+.intro{
+    background-color:var(--green-color) ;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+}
+.col h1{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 65px;
+}
+.col h3{
+    font-size: 26px;
+    line-height: 34px;
+    margin-bottom: 30px;
+}
+.col ul[id="info"] li{
+    margin: 10px 0px;
+}
+.col ul[id="info"] li i{
+    margin-right: 2%;
+}
+
+.col ul[id="info"] li:hover i{
+    color: var(--green-color);
+}
+
+.col ul[id="links"]{
+    width: 40%;
+}
+.col ul[id="links"] li{
+    font-size: 1.5rem;
+    transition: 600ms !important;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.col ul[id="links"] li i{
+    transition: 600ms !important;  
+}
+.col ul[id="links"] li:hover i{
+    color: var(--green-color);
+    background-color: white;
+    
+}
+.col ul[id="links"] li:hover{
+    background-color: white;
+}
+/* Image */
+#dp{
+    border:20px solid #030304;
+    height: 55vh;
+}
+
+/* About */
+
+#about{
+    margin-top: 200px !important;
+    margin-bottom: 200px !important;
+}
+#tech li{
+    border: 1px solid var(--green-color);
+    border-radius: 5px;
+    flex-wrap: wrap !important;
+}
+.btn{
+    background-color:var(--green-color) !important;
+    border-radius: 30px !important;
+}
+.btn a{
+    text-decoration: none;
+    background-color: var(--green-color);
+    color: white;
+    font-weight: bold;
+}
+/* Skills */
+
+.progress-bar{
+    background-color: var(--green-color) !important;
+}
+
+/* Projects */
+
+.card, .card-body,.card-title,.card-subtitle,.card-text,.project_tech,.card_list,.card_list li{
+    background-color: #1E1E25 !important;
+}
+.project_tech{
+    color: var(--green-color);
+}
+.card{
+    border-radius: 10px;
+    display: inline-block !important;
+}
+.card_list button{
+    border-radius: 5px !important;
+}
+#project_div{
+    margin-top: 250px !important;
+    padding: 0px 10%;
+}
+@media screen and (max-width:400px) {
+
+    #project_div{
+    padding: 0px 1%;
+}
+#project_div h1{
+    padding-left: 10%;
+}
+.navbar-nav, .nav-item{
+   padding-left: 0px !important; 
+}
+.row{
+    margin-top: 3vh !important;
+}
+}
+.button-icon{
+    background-color: var(--green-color)
+}
+.projects{
+    grid-template-columns: repeat(auto-fill,minmax(320px,1fr)) !important;
+    display:grid !important;
+
+}
+.outer_card{
+    width: fit-content !;
+}
+#footer{
+    margin-top: 100px !important;
+    margin-bottom: 50px;
+}
+button:hover a{
+    color: white !important;
+}
