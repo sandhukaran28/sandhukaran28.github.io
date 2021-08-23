@@ -1,6 +1,15 @@
 *{
     --green-color:#0bceaf;
 }
+body::-webkit-scrollbar{
+    width: 0.5rem;
+  }
+  body::-webkit-scrollbar-track{
+    background: #1e1e24;
+  }
+  body::-webkit-scrollbar-thumb{
+    background: var(--green-color);
+  }
 *{
     margin: 0px;
     padding: 0px;
@@ -139,6 +148,7 @@ nav{
 .card{
     border-radius: 10px;
     display: inline-block !important;
+    box-shadow: -1rem 0 3rem #000;
 }
 .card_list button{
     border-radius: 5px !important;
@@ -159,7 +169,7 @@ nav{
    padding-left: 0px !important; 
 }
 .row{
-    margin-top: 7vh !important;
+    margin-top: 3vh !important;
 }
 }
 .button-icon{
@@ -179,4 +189,53 @@ nav{
 }
 button:hover a{
     color: white !important;
+}
+
+
+/* What I do */
+
+#do h3{
+text-align: center;
+margin-bottom: 50px;
+}
+.bi-code-slash{
+    background-color: #1E1E25;
+    color: #ed7256;
+}
+#do .card h3{
+    background-color: #1E1E25;
+    text-align: start;
+    margin-bottom: 20px;
+}
+#do p{
+    background-color: #1E1E25;
+}
+#cardFlex{
+    display: flex !important;
+    justify-content: space-evenly;
+}
+#cardFlex .card{
+    width: 350px !important;
+    flex-direction: row;
+    box-shadow: -1rem 0 3rem #000;
+}
+.bi-phone-fill{
+    background-color: #1E1E25;
+    color: rgb(212, 14, 212);
+}
+.bi-braces{
+    background-color: #1E1E25;
+    color: skyblue;
+}
+@media screen and (max-width:850px) {
+    #cardFlex{
+        flex-direction: column ;
+    }
+    #cardFlex .card{
+        width: 90% !important;
+    }
+    /* #main{
+        padding: 0px 10%;
+    } */
+
 }
